@@ -48,5 +48,3 @@ class Widgets(View):
 
     def post(self, request):
         pass    
-
-
