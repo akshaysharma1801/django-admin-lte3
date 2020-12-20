@@ -26,3 +26,15 @@ class DashboardV2(View):
         pass    
 
 
+class DashboardV3(View):
+    ''' Dashboard v3 template. '''
+
+    template_name = 'dashboard/dashboard-v3.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
+
+    def post(self, request):
+        pass    
+
+
