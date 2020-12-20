@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% endblock %}</title>
+  {% include 'snippets/files-css.html' %}
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+    {% include 'snippets/top-menu.html' %}
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  {% include 'snippets/sidebar.html' %}
+  <!-- /Main Sidebar Container -->
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    {% include 'snippets/breadcrumb.html' %}
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+        {% block content %}
+        {% endblock content %}
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- footer  -->
+  {% include 'snippets/footer.html' %}
+  <!-- /footer -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+{% include 'snippets/files-js.html' %}
+</body>
+</html>
