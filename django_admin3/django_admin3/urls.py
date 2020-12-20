@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.accounts.urls', namespace='account')),
     path('dashboard/', include('apps.dashboard.urls', namespace='dashboard')),
+    path('chart/', include('apps.charts.urls', namespace='chart')),
 ]

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 PROJECT_APPS = [
     'apps.accounts',
     'apps.dashboard',
+    'apps.charts'
 ]
 
 INSTALLED_APPS += PROJECT_APPS
